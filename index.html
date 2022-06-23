@@ -10,11 +10,11 @@
 		<link rel="shortcut icon" href="/src/img/favicon.svg" />
 		<title>AI Systems Development</title>
 	</head>
-	<body id="body" class="font-halvar max-w-[1600px] m-auto bg-main">
+	<body id="body" class="font-halvar m-auto bg-white overflow-x-hidden">
 		<!-- MOBILE MENU -->
 		<div
 			id="mobMenu"
-			class="flex sm:hidden text-right fixed top-0 w-1/2 h-full -right-full bg-mobMenu duration-500 opacity-100 z-10"
+			class="flex sm:hidden text-right fixed top-0 w-1/2 h-full -right-full bg-lightGrey duration-500 opacity-100 z-10"
 		>
 			<ul class="flex flex-col gap-6 text-2xl absolute right-6 top-32">
 				<li>
@@ -40,7 +40,7 @@
 		</div>
 		<!-- MOBILE MENU END -->
 		<!-- HEADER -->
-		<header class="py-4 bg-opacity-80">
+		<header class="py-4 bg-white bg-opacity-80 z-10">
 			<div class="container m-auto px-4">
 				<div class="block sm:flex justify-between items-center">
 					<div class="flex justify-between">
@@ -117,7 +117,89 @@
 		<!-- HEADER END -->
 
 		<!-- MAIN -->
-		<main id="main" class="opacity-100"></main>
+		<main id="main" class="max-w-[1600px] m-auto px-4 opacity-100">
+			<!-- FIRST SCREEN -->
+			<section class="container m-auto px-4 mt-7 sm:mt-0">
+				<!-- H1 + IMG -->
+				<div class="flex justify-between items-center">
+					<div class="">
+						<h1
+							class="max-w-sm xl:max-w-[575px] 2xl:max-w-3xl text-4xl sm:text-[42px] xl:text-6xl 2xl:text-[82px] sm:leading-[49px] xl:leading-[72px] 2xl:leading-[95px] font-bold"
+						>
+							Разработка проекта
+							<span class="h1-gradient">с искусственным интеллектом (ИИ)</span>
+						</h1>
+						<p
+							class="sm:max-w-[360px] xl:max-w-none sm:text-lg xl:text-xl mt-5"
+						>
+							Эффективное решение задачи с помощью машинного обучения (ML)
+						</p>
+					</div>
+					<img
+						src="./src/img/first-screen-img.svg"
+						alt="Artificial Intellegent"
+						class="hidden sm:block w-56 md:w-80"
+					/>
+				</div>
+				<!-- H1 + IMG END -->
+
+				<!-- SERVICES -->
+				<div class="">
+					<!-- FIRST ROW -->
+					<div class="services-row">
+						<div class="service-block before:bg-[#D2F4E4]">
+							<h4 class="service-h4">Под ключ</h4>
+							<p class="service-p">
+								С нуля, под ключ, для бизнеса или стартапа
+							</p>
+						</div>
+
+						<div class="service-block before:bg-[#F5EEEE] self-end">
+							<h4 class="service-h4">ML сервисы</h4>
+							<p class="service-p">
+								Создадим свой ML движок либо соберем из готовых библиотек или
+								SaaS решений
+							</p>
+						</div>
+
+						<div class="service-block before:bg-[#EEF7D1]">
+							<h4 class="service-h4">Обучим модели</h4>
+							<p class="service-p">
+								Подбор платформы, построение и обучение модели
+							</p>
+						</div>
+					</div>
+					<!-- FIRST ROW END -->
+
+					<!-- SECOND ROW -->
+					<div class="services-row mt-16">
+						<div class="service-block before:bg-[#FAECFC]">
+							<h4 class="service-h4">Back-end / Front-end</h4>
+							<p class="service-p">
+								Разработаем back-end и мобильное приложение
+							</p>
+						</div>
+
+						<div class="service-block before:bg-[#BFDFE6] self-end">
+							<h4 class="service-h4">Поддержка</h4>
+							<p class="service-p">
+								Развернем на сервере, передадим исходники и авторские права
+							</p>
+						</div>
+
+						<div class="service-block before:bg-[#EAEAF6]">
+							<h4 class="service-h4">Запустим</h4>
+							<p class="service-p">
+								Бесплатно! Техническая поддержка - 12 месяцев
+							</p>
+						</div>
+					</div>
+					<!-- SECOND ROW END -->
+				</div>
+				<!-- SERVICES END -->
+			</section>
+			<!-- FIRST SCREEN END -->
+		</main>
 		<!-- MAIN END -->
 
 		<!-- FOOTER -->

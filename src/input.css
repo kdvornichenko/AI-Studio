@@ -9,6 +9,22 @@
 	.nav-link {
 		@apply hover:text-blue transition-all;
 	}
+
+	.services-row {
+		@apply flex justify-evenly h-32;
+	}
+
+	.service-block {
+		@apply max-w-[240px] relative z-10 before:absolute before:-left-10 before:-top-4 before:h-[120px] before:w-24 before:-z-10 before:rounded-[40px];
+	}
+
+	.service-h4 {
+		@apply text-serviceH4 text-xl font-medium;
+	}
+
+	.service-p {
+		@apply text-lg leading-5 font-medium;
+	}
 }
 
 /* BURGER ANIMATION */
@@ -40,3 +56,24 @@
 }
 
 /* BURGER ANIMATION END */
+
+/* H1 GRADIENT */
+.h1-gradient {
+	background: linear-gradient(
+		128.81deg,
+		#7ecaa6 5.43%,
+		#61bdd1 20.17%,
+		#cf6ddd 50.17%,
+		#4061f8 75.98%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+/* H1 GRADIENT END */
+
+/* GREY ELLIPS */
+.grey-ellipce {
+	transform: matrix(-0.77, 0.64, 0.64, 0.77, 0, 0);
+}
+/* GREY ELLIPS END */
