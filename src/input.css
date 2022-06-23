@@ -3,5 +3,40 @@
 @tailwind utilities;
 
 @layer utilities {
-	
+	.button {
+		@apply bg-blue py-0 sm:py-3 lg:py-4 px-8 lg:px-16 rounded-[30px] text-white text-lg font-bold shadow-sm transition-all hover:bg-white hover:text-black border;
+	}
+	.nav-link {
+		@apply hover:text-blue transition-all;
+	}
 }
+
+/* BURGER ANIMATION */
+.burger {
+	transition: all 0.7s, font-size 0s;
+	transition-timing-function: cubic-bezier(0.68, -0.35, 0.265, 1.35);
+}
+
+.burger > div {
+	transition: all 0.1s 0.3s, font-size 0s;
+}
+.burger > div::before,
+.burger > div::after {
+	transition: all 0.3s 0.2s, font-size 0s;
+}
+.burger.toggled {
+	transform: rotate(180deg);
+}
+.burger.toggled > div::before {
+	transform: rotate(45deg) translate(15%, 200%);
+	width: 24px;
+}
+.burger.toggled > div {
+	background: transparent;
+}
+.burger.toggled > div::after {
+	transform: rotate(-45deg) translate(15%, -200%);
+	width: 24px;
+}
+
+/* BURGER ANIMATION END */

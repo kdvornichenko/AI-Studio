@@ -6,25 +6,127 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="AI Systems Development" />
 		<link href="/dist/output.css" rel="stylesheet" />
-		<link href="/src/font/stylesheet.css" rel="stylesheet" />
+		<link href="./src/font/fonts.css" rel="stylesheet" />
 		<link rel="shortcut icon" href="/src/img/favicon.svg" />
 		<title>AI Systems Development</title>
 	</head>
-	<body>
+	<body id="body" class="font-halvar max-w-[1600px] m-auto bg-main">
+		<!-- MOBILE MENU -->
+		<div
+			id="mobMenu"
+			class="flex sm:hidden text-right fixed top-0 w-1/2 h-full -right-full bg-mobMenu duration-500 opacity-100 z-10"
+		>
+			<ul class="flex flex-col gap-6 text-2xl absolute right-6 top-32">
+				<li>
+					<a class="menu-link" data-goto=".portfolio" href="#">Портфолио</a>
+				</li>
+				<li><a class="menu-link" data-goto=".about" href="#">О студии</a></li>
+				<li>
+					<a class="menu-link" data-goto=".contacts" href="#">Контакты</a>
+				</li>
+				<li class="flex gap-4 justify-end">
+					<img
+						src="./src/img/telegram-icon.svg"
+						alt="Telegram"
+						class="w-[30px]"
+					/>
+					<img
+						src="./src/img/whatsapp-icon.svg"
+						alt="Whatsapp"
+						class="w-[30px]"
+					/>
+				</li>
+			</ul>
+		</div>
+		<!-- MOBILE MENU END -->
 		<!-- HEADER -->
-		<header>
-			<div class="container">
-				
+		<header class="py-4 bg-opacity-80">
+			<div class="container m-auto px-4">
+				<div class="block sm:flex justify-between items-center">
+					<div class="flex justify-between">
+						<div
+							id="mobHeaderWrap"
+							class="flex gap-4 md:gap-7 lg:gap-10 opacity-100"
+						>
+							<a href="/"><img src="./src/img/logo.png" alt="Logo" /></a>
+							<button class="button">Заказать</button>
+						</div>
+
+						<!-- BURGER -->
+						<div
+							id="burger"
+							class="burger flex items-center px-3 py-6 rounded-full text-base bg-burgerBg cursor-pointer sm:hidden z-20 h-6 self-center"
+						>
+							<div
+								class="relative w-6 h-0.5 rounded-2xl bg-black before:block before:absolute before:right-0 before:w-4 before:h-0.5 before:bg-black before:rounded-2xl before:-mt-1.5 after:block after:absolute after:w-4 after:h-0.5 after:bg-black after:rounded-2xl after:mt-1.5"
+							></div>
+						</div>
+						<!-- BURGER END -->
+					</div>
+
+					<div class="hidden sm:flex gap-8 md:gap-10 lg:gap-14 items-center">
+						<div class="flex gap-7 items-center">
+							<!-- TELEGRAM ICON -->
+							<a href="https://t.me/">
+								<svg
+									width="20"
+									height="17"
+									viewBox="0 0 20 17"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M7.7442 11.1227L7.42827 15.6933C7.88028 15.6933 8.07605 15.4935 8.31081 15.2537L10.43 13.1706L14.8213 16.4782C15.6266 16.9398 16.194 16.6967 16.4113 15.7162L19.2937 1.82434L19.2945 1.82352C19.5499 0.599027 18.8639 0.120196 18.0793 0.420591L1.13666 7.0923C-0.019635 7.55394 -0.00212738 8.21694 0.940101 8.51733L5.27165 9.90308L15.333 3.42781C15.8065 3.10532 16.237 3.28375 15.8829 3.60625L7.7442 11.1227Z"
+										fill="#009BE4"
+									/>
+								</svg>
+							</a>
+							<!-- TELEGRAM ICON END -->
+
+							<!-- WHATSAPP ICON -->
+							<a href="https://wa.me">
+								<svg
+									width="19"
+									height="19"
+									viewBox="0 0 19 19"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M9.19905 0.333496H9.20348C14.0927 0.333496 18.0686 4.31158 18.0686 9.20078C18.0686 14.09 14.0927 18.0681 9.20348 18.0681C7.4001 18.0681 5.72751 17.5316 4.32537 16.6027L0.917008 17.6923L2.02209 14.3981C0.959128 12.9383 0.333984 11.1405 0.333984 9.20078C0.333984 4.31047 4.30985 0.333496 9.19905 0.333496ZM12.6224 14.1067C13.2996 13.9603 14.1487 13.4593 14.3626 12.8553C14.5765 12.2501 14.5765 11.7347 14.5144 11.6249C14.4643 11.5379 14.3458 11.4808 14.1689 11.3956C14.1228 11.3734 14.0728 11.3493 14.019 11.3223C13.7585 11.1926 12.4916 10.5664 12.2522 10.4833C12.0172 10.3946 11.7933 10.4256 11.6159 10.6761C11.5822 10.7233 11.5486 10.7707 11.5151 10.8177C11.3011 11.1186 11.0948 11.4089 10.9232 11.5939C10.7669 11.7602 10.512 11.7812 10.298 11.6925C10.2747 11.6828 10.248 11.672 10.2181 11.6599C9.87934 11.5231 9.12807 11.2197 8.21867 10.4101C7.45165 9.72733 6.9307 8.87718 6.77995 8.62224C6.63195 8.3665 6.75961 8.21654 6.8776 8.07794C6.87978 8.07537 6.88197 8.07281 6.88414 8.07025C6.96021 7.97613 7.03403 7.89776 7.10822 7.81899C7.16159 7.76234 7.21515 7.70547 7.26987 7.64241C7.278 7.63304 7.2859 7.62395 7.2936 7.6151C7.40979 7.4815 7.47898 7.40194 7.55695 7.23562C7.64562 7.06382 7.58244 6.88647 7.51926 6.75568C7.47579 6.66408 7.20725 6.01252 6.97673 5.45321C6.87809 5.21389 6.78642 4.99147 6.72231 4.83702C6.55051 4.4258 6.41972 4.41028 6.15924 4.3992C6.15126 4.3988 6.1432 4.39839 6.13505 4.39798C6.05272 4.39381 5.96204 4.38922 5.86219 4.38922C5.52301 4.38922 5.16943 4.48898 4.95551 4.70733C4.94803 4.71497 4.94024 4.7229 4.93215 4.73112C4.65847 5.00946 4.04883 5.62947 4.04883 6.86541C4.04883 8.10374 4.92747 9.30217 5.09004 9.52392C5.09452 9.53003 5.09846 9.5354 5.10182 9.54C5.1116 9.55285 5.13004 9.57955 5.15687 9.61841C5.48882 10.0991 7.10564 12.4405 9.51662 13.4394C11.5539 14.284 12.1591 14.2053 12.6224 14.1067Z"
+										fill="#47AF53"
+									/>
+								</svg>
+							</a>
+							<!-- WHATSAPP ICON END -->
+						</div>
+
+						<nav id="nav">
+							<ul class="flex gap-3 md:gap-5 lg:gap-12 text-black font-bold">
+								<li><a href="#" class="nav-link">Портфолио</a></li>
+								<li><a href="#" class="nav-link">О студии</a></li>
+								<li><a href="#" class="nav-link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- HEADER END -->
 
 		<!-- MAIN -->
-		<main></main>
+		<main id="main" class="opacity-100"></main>
 		<!-- MAIN END -->
 
 		<!-- FOOTER -->
 		<footer></footer>
 		<!-- FOOTER END -->
+
+		<!-- TW EXTRA CLASSES FOR MOBMENU TO WORK CORRECTLY -->
+		<div class="opacity-30 right-0 overflow-y-hidden"></div>
+
+		<script src="./src/script.min.js"></script>
 	</body>
 </html>
