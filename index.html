@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0" />
 		<meta name="description" content="AI Systems Development" />
 		<link href="./dist/output.css" rel="stylesheet" />
 		<link href="./src/font/fonts.css" rel="stylesheet" />
 		<link rel="shortcut icon" href="./src/img/favicon.svg" />
 		<title>AI Systems Development</title>
 	</head>
-	<body id="body" class="font-halvar m-auto bg-white overflow-x-hidden">
+	<body id="body" class="font-halvar m-auto bg-white">
 		<!-- MOBILE MENU -->
 		<div
 			id="mobMenu"
@@ -121,7 +121,7 @@
 		<!-- MAIN -->
 		<main id="main" class="max-w-[1600px] m-auto px-4 opacity-100">
 			<!-- FIRST SCREEN -->
-			<section class="section">
+			<section class="section mt-7 sm:mt-0">
 				<!-- H1 + IMG -->
 				<div class="flex justify-between items-center">
 					<div class="">
@@ -207,8 +207,10 @@
 			<!-- FIRST SCREEN END -->
 
 			<!-- PREPARATION FOR AI -->
-			<section class="section">
-				<div class="relative py-[76px] pl-16 bg-lightGrey rounded-[60px]">
+			<section class="section mt-36">
+				<div
+					class="flex justify-between items-center py-[76px] pl-16 bg-lightGrey rounded-[60px]"
+				>
 					<div class="">
 						<div class="flex items-center gap-5">
 							<h2 class="h2">Подготовка к ИИ</h2>
@@ -246,14 +248,70 @@
 						</div>
 						<button class="button mt-12">Подробнее</button>
 					</div>
-					<img
-						src="./src/img/preparation-for-AI-scheme.svg"
-						alt="Scheme"
-						class="absolute -right-48 -top-14 bg-white rounded-full py-20 px-[89px]"
-					/>
+					<div class="relative z-40">
+						<img
+							src="./src/img/preparation-for-AI-scheme.svg"
+							alt="Scheme"
+							class=""
+						/>
+						<div
+							class="absolute top-[50%] -translate-y-1/2 bg-white rounded-l-full w-[100vw] max-w-[46.5rem] h-[120%] -z-10"
+						></div>
+					</div>
 				</div>
 			</section>
 			<!-- PREPARATION FOR AI END -->
+
+			<!-- CREATION OF AI -->
+			<section class="section mt-36">
+				<div
+					class="flex justify-between items-center py-[76px] pl-16 rounded-[60px]"
+				>
+					<div class="">
+						<div class="flex items-center gap-5">
+							<h2 class="h2">Создание ИИ</h2>
+							<img src="./src/img/creation-of-AI.png" alt="Robot Leg" />
+						</div>
+						<p class="h2-subtext">Использование готовых моделей</p>
+
+						<ul class="list-check">
+							<li>Настройка модели</li>
+							<li>Подготовка данных</li>
+							<li>Обучение модели</li>
+							<li>Оценка результата</li>
+							<li>Оптимизация</li>
+						</ul>
+
+						<p class="mt-7 text-sm max-w-[550px]">
+							Создание искусственного интеллекта происходит в несколько
+							повторяющихся этапов. Настройка готовой модели под требования из
+							ТЗ. Сбор данных (структурируются имеющиеся, осуществляется поиск
+							среди открытых источников либо создаются с нуля). Тренировка
+							модели (т.е. обучение для получения желаемого результата от нее).
+							Оценка результата (тестирование на данных, которые модель ранее не
+							видела). Оптимизация (новые данные, тренировка, оценка).
+						</p>
+
+						<div class="mt-12 text-3xl font-bold">
+							от <span class="text-[52px] leading-[60px]">675 000</span> руб /
+							от
+							<span class="text-[52px] leading-[60px]">45 дней</span>
+						</div>
+						<button class="button mt-12">Подробнее</button>
+					</div>
+					<div class="relative">
+						<img
+							src="./src/img/creation-of-AI-scheme.svg"
+							alt="Scheme"
+							class="z-10"
+						/>
+						<div
+							class="absolute top-[50%] -translate-y-1/2 bg-lightGrey rounded-l-full w-[100vw] max-w-[46.5rem] h-5/6 -z-10"
+						></div>
+					</div>
+				</div>
+			</section>
+			<!-- CREATION OF AI END -->
 		</main>
 		<!-- MAIN END -->
 
