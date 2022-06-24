@@ -644,24 +644,16 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -824,6 +816,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .text-right {
   text-align: right;
 }
@@ -926,14 +923,29 @@ video {
 
 .services-row {
   display: flex;
-  height: 8rem;
+  flex-direction: column;
   justify-content: space-evenly;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .services-row {
+    gap: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-row {
+    height: 8rem;
+    flex-direction: row;
+  }
 }
 
 .service-block {
   position: relative;
   z-index: 10;
-  max-width: 240px;
+  height: 120px;
+  max-width: 215px;
 }
 
 .service-block::before {
@@ -941,10 +953,16 @@ video {
   left: -2.5rem;
   top: -1rem;
   z-index: -10;
-  height: 120px;
+  height: 100%;
   width: 6rem;
   content: var(--tw-content);
   border-radius: 40px;
+}
+
+@media (min-width: 768px) {
+  .service-block {
+    max-width: 240px;
+  }
 }
 
 .service-h4 {
@@ -956,9 +974,18 @@ video {
 }
 
 .service-p {
-  font-size: 1.125rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
-  line-height: 1.25rem;
+  line-height: 19px;
+}
+
+@media (min-width: 1280px) {
+  .service-p {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
 }
 
 /* BURGER ANIMATION */
@@ -1160,6 +1187,10 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1191,6 +1222,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:w-80 {
     width: 20rem;
   }
@@ -1209,6 +1244,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .lg\:gap-10 {
     gap: 2.5rem;
   }
@@ -1219,6 +1258,10 @@ video {
 
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:self-end {
+    align-self: flex-end;
   }
 }
 

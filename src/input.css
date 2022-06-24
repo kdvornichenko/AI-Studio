@@ -11,11 +11,11 @@
 	}
 
 	.services-row {
-		@apply flex justify-evenly h-32;
+		@apply flex flex-col lg:flex-row justify-evenly gap-8 sm:gap-0 lg:h-32;
 	}
 
 	.service-block {
-		@apply max-w-[240px] relative z-10 before:absolute before:-left-10 before:-top-4 before:h-[120px] before:w-24 before:-z-10 before:rounded-[40px];
+		@apply max-w-[215px] md:max-w-[240px] h-[120px] relative z-10 before:absolute before:-left-10 before:-top-4 before:h-full before:w-24 before:-z-10 before:rounded-[40px];
 	}
 
 	.service-h4 {
@@ -23,7 +23,7 @@
 	}
 
 	.service-p {
-		@apply text-lg leading-5 font-medium;
+		@apply mt-2 text-base leading-[19px] xl:text-lg xl:leading-5 font-medium;
 	}
 }
 
