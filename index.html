@@ -209,26 +209,32 @@
 			<!-- PREPARATION FOR AI -->
 			<section class="section mt-36">
 				<div
-					class="flex justify-between items-center py-[76px] pl-16 bg-lightGrey rounded-[60px]"
+					class="flex flex-col lg:flex-row justify-between items-center p-10 lg:py-[76px] lg:pl-16 bg-lightGrey rounded-[60px]"
 				>
 					<div class="">
 						<div class="flex items-center gap-5">
 							<h2 class="h2">Подготовка к ИИ</h2>
-							<img src="./src/img/preparation-for-AI.png" alt="Robot Arm" />
+							<img
+								src="./src/img/preparation-for-AI.png"
+								alt="Robot Arm"
+								class="lg:w-12 xl:w-auto"
+							/>
 						</div>
 						<p class="h2-subtext">3 последовательных этапа работ</p>
-						<ul
-							class="stages-bg mt-8 max-w-[560px] rounded-full flex justify-between py-1 pr-1 pl-6 text-xl leading-5 items-center"
-						>
-							<li class="max-w-[135px]">1. Техническое задание</li>
-							<li class="max-w-[130px]">2. Анализ моделей ИИ</li>
-							<li
-								class="max-w-[190px] bg-white shadow-lg rounded-full text-blue py-[11px] pl-5 pr-9"
+						<div class="right-5 sm:relative">
+							<ul
+								class="flex flex-wrap justify-around gap-2 sm:gap-0 sm:justify-between stages-bg mt-8 min-w-[320px] max-w-[560px] rounded-full py-4 sm:py-1 pr-1 pl-6 text-lg xl:text-xl leading-5 items-center"
 							>
-								3. Архитектура системы с ИИ
-							</li>
-						</ul>
-						<ul class="list-check">
+								<li class="max-w-[135px]">1. Техническое задание</li>
+								<li class="max-w-[130px]">2. Анализ моделей ИИ</li>
+								<li
+									class="w-[165px] sm:w-[190px] bg-white shadow-lg rounded-full text-blue py-[11px] pl-5 pr-5 sm:pr-9"
+								>
+									3. Архитектура системы с ИИ
+								</li>
+							</ul>
+						</div>
+						<ul class="list-check mt-12 sm:mt-7">
 							<li>Определение подходящей модели ИИ</li>
 							<li>Фиксация сопутствующих технологий</li>
 							<li>Проектирование архитектуры системы</li>
@@ -242,20 +248,29 @@
 							взаимодействие, создается диаграмма связей и т.д.).
 						</p>
 
-						<div class="mt-12 text-3xl font-bold">
-							от <span class="text-[52px] leading-[60px]">38 250</span> руб / от
-							<span class="text-[52px] leading-[60px]">7 дней</span>
+						<div class="mt-12 text-2xl sm:text-3xl leading-[46px] font-bold">
+							от
+							<span class="text-[40px] sm:text-[52px] sm:leading-[60px]"
+								>38 250</span
+							>
+							руб / <br class="sm:hidden" />
+							от
+							<span class="text-[40px] sm:text-[52px] sm:leading-[60px]"
+								>7 дней</span
+							>
 						</div>
-						<button class="button mt-12">Подробнее</button>
+						<button class="button py-3 mt-12">Подробнее</button>
 					</div>
-					<div class="relative z-40">
+					<div
+						class="relative hidden md:block z-40 self-end mt-14 sm:mt-0 sm:max-w-xs xl:max-w-none"
+					>
 						<img
 							src="./src/img/preparation-for-AI-scheme.svg"
 							alt="Scheme"
 							class=""
 						/>
 						<div
-							class="absolute top-[50%] -translate-y-1/2 bg-white rounded-l-full w-[100vw] max-w-[46.5rem] h-[120%] -z-10"
+							class="absolute -left-[20%] lg:-left-6 xl:left-0 top-[50%] lg:top-[60%] xl:top-[50%] -translate-y-1/2 rotate-90 md:rotate-45 xl:rotate-0 bg-white rounded-l-full w-[100vw] md:max-w-[31rem] lg:max-w-[29rem] xl:max-w-[47.5rem] h-[120%] md:h-[130%] -z-10"
 						></div>
 					</div>
 				</div>
@@ -265,7 +280,7 @@
 			<!-- CREATION OF AI -->
 			<section class="section mt-36">
 				<div
-					class="flex justify-between items-center py-[76px] pl-16 rounded-[60px]"
+					class="flex flex-col lg:flex-row justify-between items-center p-10 lg:py-[76px] lg:pl-16 rounded-[60px]"
 				>
 					<div class="">
 						<div class="flex items-center gap-5">
@@ -292,21 +307,30 @@
 							видела). Оптимизация (новые данные, тренировка, оценка).
 						</p>
 
-						<div class="mt-12 text-3xl font-bold">
-							от <span class="text-[52px] leading-[60px]">675 000</span> руб /
+						<div class="mt-12 text-2xl sm:text-3xl leading-[46px] font-bold">
 							от
-							<span class="text-[52px] leading-[60px]">45 дней</span>
+							<span class="text-[40px] sm:text-[52px] sm:leading-[60px]"
+								>675 000</span
+							>
+							руб /
+							<br class="sm:hidden" />
+							от
+							<span class="text-[40px] sm:text-[52px] sm:leading-[60px]"
+								>45 дней</span
+							>
 						</div>
-						<button class="button mt-12">Подробнее</button>
+						<button class="button py-3 mt-12">Подробнее</button>
 					</div>
-					<div class="relative">
+					<div
+						class="absolute right-0 hidden md:block z-40 self-end mt-14 sm:mt-0 sm:max-w-xs xl:max-w-none"
+					>
 						<img
 							src="./src/img/creation-of-AI-scheme.svg"
 							alt="Scheme"
-							class="z-10"
+							class=""
 						/>
 						<div
-							class="absolute top-[50%] -translate-y-1/2 bg-lightGrey rounded-l-full w-[100vw] max-w-[46.5rem] h-5/6 -z-10"
+							class="absolute lg:-right-[105px] xl:right-0 top-[50%] lg:top-[60%] xl:top-[45%] -translate-y-1/2 bg-lightGrey rounded-l-full md:rotate-45 xl:rotate-0 lg:w-[36vw] xl:w-[100vw] md:max-w-[31rem] lg:max-w-[29rem] xl:max-w-[38rem] 2xl:max-w-[37.5rem] lg:h-[68%] xl:h-[60%] -z-10"
 						></div>
 					</div>
 				</div>

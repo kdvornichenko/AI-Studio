@@ -4,19 +4,19 @@
 
 @layer utilities {
 	.h2 {
-		@apply text-6xl;
+		@apply text-[38px] md:text-[42px] xl:text-5xl 2xl:text-6xl leading-[44px];
 	}
 
 	.h2-subtext {
-		@apply mt-4 text-2xl;
+		@apply mt-4 text-lg xl:text-2xl;
 	}
 
 	.section {
-		@apply container mx-auto px-4;
+		@apply container mx-auto md:px-4;
 	}
 
 	.button {
-		@apply bg-blue py-0 sm:py-3 lg:py-4 px-8 lg:px-16 rounded-[30px] text-white text-lg font-bold shadow-sm transition-all hover:bg-white hover:text-black border;
+		@apply bg-blue sm:py-3 lg:py-4 px-8 lg:px-16 rounded-[30px] text-white text-lg font-bold shadow-sm transition-all hover:bg-white hover:text-black border;
 	}
 	.nav-link {
 		@apply hover:text-blue transition-all;
@@ -117,10 +117,6 @@
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-.list-check {
-	margin-top: 30px;
 }
 
 .list-check li {
